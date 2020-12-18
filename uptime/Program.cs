@@ -26,16 +26,22 @@ namespace uptime
                     throw e;
                 }
             }
+            foreach (pingtest a in addr)
+            {
+                a.test();
+                a.toJson();
+            }
+            /*
             while (true)
             {
                 foreach(pingtest a in addr)
                 {
                     a.test();
-                    Console.Write(a.toString());
+                    Console.WriteLine(a.toString(true));
                 }
                 Thread.Sleep(1000);
                 Console.Clear();
-            }
+            }*/
         }
     }
 
