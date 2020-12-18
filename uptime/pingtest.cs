@@ -22,7 +22,7 @@ namespace uptime
             public bool result;
         }
 
-        //used to seralize pingtest into json
+        //used to serialize pingtest into json
         private struct serializable_obj
         {
             public string ip;
