@@ -113,6 +113,14 @@ namespace uptime
         }
 
         /// <summary>
+        /// Clears log variable
+        /// </summary>
+        public void clear()
+        {
+            log.Clear();
+        }
+
+        /// <summary>
         /// Pings target and returns result
         /// </summary>
         /// <param name="nameOrAddress">ip or hostname to ping</param>
